@@ -1,0 +1,191 @@
+@import "../basic/reset";
+
+@import "../basic/vars";
+@import "../basic/mixins";
+
+@import "../basic/templates";
+
+@import "../animations/animations";
+
+@import "../components/header";
+
+@import "../components/hero";
+
+@import "../components/articles";
+
+@import "../components/recepts";
+
+@import "../components/footer";
+
+.exercises {
+    padding: 60px 0;
+    &__wrapper {
+    }
+    &__filters {
+    }
+    @media (max-width: 1200px) {
+        padding: 20px 0;
+    }
+    @media (max-width: 600px) {
+        padding: 0;
+    }
+    &__subtitle {
+        max-width: 600px;
+        display: inline;
+        @media (max-width: 1200px) {
+            display: none;
+        }
+        &-mobile {
+            display: inline;
+            @media (min-width: 1200px) {
+                display: none;
+            }
+        }
+    }
+    &__info {
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+        margin: 20px 0;
+        align-items: stretch;
+        @media (max-width: 600px) {
+            margin: 10px 0;
+        }
+        article {
+            @media (max-width: 5000px) {
+                width: calc(50% - (15px));
+            }
+            @media (max-width: 1260px) {
+                width: 100%;
+            }
+            border: 1px solid;
+            a {
+                justify-content: start;
+                img {
+                    @media (max-width: 5000px) {
+                        max-height: 332px;
+                        min-width: calc((332px / 16) * 9);
+                    }
+                    @media (max-width: 900px) {
+                        max-height: 250px !important;
+                        min-width: calc((250px / 16) * 9);
+                        max-width: unset;
+                        width: unset;
+                    }
+                    @media (max-width: 600px) {
+                        max-height: 200px !important;
+                        min-width: calc((200px / 16) * 9);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.filters {
+    &__btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 30px;
+        margin-bottom: 20px;
+        @media (min-width: 1800px) {
+            gap: 60px;
+        }
+        @media (max-width: 1200px) {
+        }
+        @media (max-width: 600px) {
+            margin-bottom: 10px;
+        }
+    }
+    &__btn {
+        padding: 10px 60px;
+        border-radius: 20px;
+        font-size: 22px;
+        line-height: calc(24 / 22 * 1);
+        border: 1px solid;
+        position: relative;
+        color: $orange;
+        background: transparent;
+        background-image: url("/assets/imgs/icons/arrows/rects-disable-btn.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 400%;
+        @media (min-width: 1800px) {
+            padding: 10px 120px;
+            font-size: 36px;
+        }
+        @media (max-width: 600px) {
+            padding: 5px;
+            max-width: 46%;
+            font-size: 16px;
+            width: 100%;
+        }
+        &:hover {
+            animation: zoomBackground 1.3s forwards;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            background-size: cover;
+            background-image: url("/assets/imgs/icons/x.svg");
+            background-repeat: no-repeat;
+            right: -26px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            @media (min-width: 1800px) {
+                right: -45px;
+                width: 26px;
+                height: 26px;
+            }
+            @media (max-width: 600px) {
+                width: 15px;
+                height: 15px;
+                top: 5px;
+            }
+        }
+        &-selected {
+            &::after {
+                display: none;
+            }
+        }
+        &-selected {
+            background: $darkgreen;
+            color: $white;
+        }
+    }
+}
+
+@keyframes zoomBackground {
+    0% {
+        background-size: 400%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+.exercises__items .article__small-heart {
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    @media (max-width: 600px) {
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        margin: 7px;
+    }
+}

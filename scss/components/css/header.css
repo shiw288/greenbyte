@@ -1,0 +1,222 @@
+.header {
+  position: relative;
+  font-family: "Antipasto Pro", sans-serif;
+  /*
+  &__nav,
+      &__link-profile p {
+          font-size: 30px;
+          line-height: calc(34 / 30 * 1);
+      } 
+  */
+  background: #fff;
+  width: 100%;
+}
+@media (min-width: 1800px) {
+  .header__wrapper {
+    max-width: calc(100% - 190px);
+  }
+}
+@media (max-width: 600px) {
+  .header__wrapper {
+    max-width: 95% !important;
+  }
+}
+@media (max-width: 5000px) {
+  .header__content {
+    padding: 40px 0;
+  }
+  .header__link svg {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .header__logo {
+    z-index: 10;
+  }
+  .header__logo a img {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1800px) {
+  .header__content {
+    padding: 20px 0px;
+  }
+  .header__nav, .header__link-profile p {
+    font-size: 22px;
+    line-height: 1.0909090909;
+  }
+  .header__link svg {
+    max-width: 24px;
+    max-height: 24px;
+  }
+  .header__logo a img {
+    max-width: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .header__content {
+    padding: 20px 0px 10px 0;
+  }
+  .header__logo a img {
+    max-width: 100px;
+  }
+}
+@media (min-width: 1800px) {
+  .header__nav, .header__link-profile p {
+    font-size: 40px;
+    line-height: 1.1333333333;
+  }
+}
+.header__content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  gap: 20px;
+  z-index: 12;
+}
+.header__nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 65px;
+}
+@media screen and (max-width: 1200px) {
+  .header__nav {
+    display: none;
+  }
+}
+.header__nav-mobile {
+  transition: top 0.5s ease-in-out;
+  position: absolute;
+  top: -100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  z-index: 10;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  background: white;
+  font-size: 32px;
+  line-height: 1.0625;
+}
+@media screen and (max-width: 1200px) {
+  .header__nav-mobile.active {
+    top: 90px;
+  }
+}
+.header__link {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #000;
+}
+.header__link-active {
+  color: #ddd;
+}
+.header__link-active svg path {
+  stroke: #ddd;
+}
+@media screen and (max-width: 1200px) {
+  .header__link-profile {
+    display: none;
+  }
+}
+.header__close-btn {
+  cursor: pointer;
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  z-index: 11;
+}
+@media screen and (max-width: 1200px) {
+  .header__close-btn {
+    display: block;
+  }
+}
+.header__close-btn.active span {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.header__close-btn.active:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 8px;
+}
+.header__close-btn.active:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 6px;
+}
+.header__close-btn span {
+  position: absolute;
+  background-color: #000;
+  left: 0;
+  width: 100%;
+  border-radius: 100px;
+  height: 5px;
+  top: 7px;
+  transition: all 0.4s ease 0s;
+}
+.header__close-btn:before {
+  top: -1px;
+}
+.header__close-btn:after {
+  bottom: 0;
+}
+.header__close-btn:before, .header__close-btn:after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  border-radius: 100px;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  transition: all 0.4s ease 0s;
+}
+
+body.lock {
+  overflow: hidden;
+}

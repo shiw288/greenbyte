@@ -1,0 +1,39 @@
+@mixin for-small-phone {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+@mixin for-tablets {
+    @media (max-width: 1799px) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop-up {
+    @media (min-width: 2500px) {
+        @content;
+    }
+}
+
+$ui-step: 4px;
+
+@mixin ui-margin($direction, $size) {
+    @if ($direction == top) {
+        margin-top: $ui-step * $size;
+    }
+    @if ($direction == bottom) {
+        margin-bottom: $ui-step * $size;
+    }
+    @if ($direction == left) {
+        margin-left: $ui-step * $size;
+    }
+    @if ($direction == right) {
+        margin-right: $ui-step * $size;
+    }
+}

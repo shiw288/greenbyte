@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GreenBite - Статьи</title>
+
+    <meta name="description" content="GreenBite - Страница со статьями" />
+    <meta name="keywords" content="GreenBite" />
+    <meta name="author" content="L&L agency" />
+    <meta name="image" content="/assets/imgs/blocks/profile/bg.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GreenBite" />
+    <meta
+      property="og:description"
+      content="GreenBite - Страница со статьями"
+    />
+    <meta property="og:image" content="/assets/imgs/favicon/favicon.ico" />
+    <!-- <meta property='og:url' content='https://example.com' /> -->
+
+    <!-- <link rel='canonical' href='https://example.com' /> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <!-- <link rel='preconnect' href='https://google-analytics.com' /> -->
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/fonts/FuturaPT/stylesheet.css" />
+    <link rel="stylesheet" href="/assets/fonts/Averta/stylesheet.css" />
+    <link rel="stylesheet" href="/assets/fonts/Briberra/stylesheet.css" />
+    <link rel="stylesheet" href="/assets/fonts/Antipasto/stylesheet.css" />
+    <link rel="stylesheet" href="/assets/fonts/Evolventa/stylesheet.css" />
+    <link rel="stylesheet" href="/assets/fonts/Bebas Neue/stylesheet.css" />
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/imgs/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/imgs/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/imgs/favicon/favicon-16x16.png"
+    />
+    <!-- <link rel='manifest' href='/site.webmanifest'> -->
+    <style>
+      .footer {
+        /* Default background image */
+        background-image: url("/assets/imgs/blocks/footer/bg.png") !important;
+      }
+
+      /* Media query for smaller screens */
+      @media (max-width: 600px) {
+        .footer {
+          background-image: url("/assets/imgs/blocks/footer/bg-mobile.png") !important;
+        }
+      }
+    </style>
+    <meta
+      name="msapplication-TileImage"
+      content="/assets/imgs/favicon/android-chrome-192x192.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta name="apple-mobile-web-app-title" content="GreenBite" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+
+    <link
+      rel="shortcut icon"
+      href="/assets/imgs/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/scss/pages/css/articles.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">
+            <a href="/">
+              <img src="/assets/imgs/icons/logos/logo.svg" alt="GreenBite" />
+            </a>
+          </div>
+          <ul class="header__nav">
+            <li class="header__nav-item">
+              <a href="/" class="header__link">главная</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./exercises.html" class="header__link">спорт</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./recipes.html" class="header__link header__link-active"
+                >питание</a
+              >
+            </li>
+          </ul>
+          <ul class="header__nav-mobile">
+            <li class="header__nav-item">
+              <a href="./profile.html" class="header__link">
+                <svg
+                  width="49"
+                  height="54"
+                  viewBox="0 0 49 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M46.3874 51.9358V46.3874C46.3874 43.4443 45.2182 40.6218 43.1372 38.5407C41.0561 36.4597 38.2336 35.2905 35.2905 35.2905H13.0968C10.1538 35.2905 7.33125 36.4597 5.25019 38.5407C3.16913 40.6218 2 43.4443 2 46.3874V51.9358"
+                    stroke="black"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M24.1945 24.1937C30.3231 24.1937 35.2913 19.2255 35.2913 13.0968C35.2913 6.96823 30.3231 2 24.1945 2C18.0659 2 13.0977 6.96823 13.0977 13.0968C13.0977 19.2255 18.0659 24.1937 24.1945 24.1937Z"
+                    stroke="black"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p>профиль</p>
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/" class="header__link">главная</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./exercises.html" class="header__link">спорт</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="./recipes.html" class="header__link header__link-active"
+                >питание</a
+              >
+            </li>
+          </ul>
+          <div class="header__link-profile">
+            <a href="./profile.html" class="header__link">
+              <svg
+                width="49"
+                height="54"
+                viewBox="0 0 49 54"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M46.3874 51.9358V46.3874C46.3874 43.4443 45.2182 40.6218 43.1372 38.5407C41.0561 36.4597 38.2336 35.2905 35.2905 35.2905H13.0968C10.1538 35.2905 7.33125 36.4597 5.25019 38.5407C3.16913 40.6218 2 43.4443 2 46.3874V51.9358"
+                  stroke="black"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M24.1945 24.1937C30.3231 24.1937 35.2913 19.2255 35.2913 13.0968C35.2913 6.96823 30.3231 2 24.1945 2C18.0659 2 13.0977 6.96823 13.0977 13.0968C13.0977 19.2255 18.0659 24.1937 24.1945 24.1937Z"
+                  stroke="black"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p>профиль</p>
+            </a>
+          </div>
+          <div class="header__close-btn">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="article-arrow-back arrow-back">
+        <div class="container">
+          <a
+            class="arrow-back-link profile__form-btn navigation__back-btn"
+            href="#"
+            onclick="history.back(); return false;"
+          >
+            <svg
+              width="16"
+              height="30"
+              viewBox="0 0 16 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 29L1 15L15 1"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>назад</p>
+          </a>
+        </div>
+      </div>
+      <div class="container articles__hero-wrapper">
+        <section
+          class="articles__hero articles__hero-full"
+          style="
+            background-image: url('/assets/imgs/blocks/articles/articles-full-bg.png');
+          "
+        >
+          <div class="articles__content article__full-content">
+            <div class="articles__info articles__full-info">
+              <article class="article">
+                <div class="article__top">
+                  <div class="article__top-info">
+                    <h1 class="article__top-title article__main-title">
+                      Почему вредно есть сахар? Почему вредны сахаро заменители?
+                      Чем можно его заменить?
+                    </h1>
+                    <p class="article__top-subtitle">
+                      Время прочтения: 10 минут
+                    </p>
+                  </div>
+                  <div
+                    class="article__top-heart article-heart article__small-heart"
+                  >
+                    <svg
+                      width="46"
+                      height="40"
+                      viewBox="0 0 46 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M40.6203 5.33443C39.6022 4.33011 38.3934 3.5334 37.0629 2.98984C35.7324 2.44628 34.3064 2.1665 32.8663 2.1665C31.4261 2.1665 30.0001 2.44628 28.6696 2.98984C27.3391 3.5334 26.1303 4.33011 25.1122 5.33443L22.9993 7.41778L20.8864 5.33443C18.8299 3.30671 16.0407 2.16755 13.1324 2.16755C10.224 2.16755 7.43482 3.30671 5.37833 5.33443C3.32183 7.36215 2.1665 10.1123 2.1665 12.9799C2.1665 15.8476 3.32183 18.5977 5.37833 20.6255L7.49125 22.7088L22.9993 37.9998L38.5074 22.7088L40.6203 20.6255C41.6389 19.6216 42.4469 18.4297 42.9981 17.1179C43.5494 15.806 43.8332 14.3999 43.8332 12.9799C43.8332 11.5599 43.5494 10.1539 42.9981 8.84202C42.4469 7.53018 41.6389 6.33828 40.6203 5.33443Z"
+                        stroke="#B9B9B9"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <img
+                  class="article__full-img"
+                  src="/assets/imgs/blocks/articles/articles-example-full-bg.png"
+                  alt=""
+                />
+                <span class="article__full-subimage"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  eius asperiores, molestias minus animi minima, voluptatum non
+                  nostrum, in excepturi necessitatibus voluptate?</span
+                >
+                <div class="article__full-info article-info">
+                  <h2 class="article__main-title">Что есть сахар</h2>
+                  <div class="article__info-block">
+                    <h3 class="article__info-title">
+                      1. Как он попадает в кровь
+                    </h3>
+                    <p class="article__info-subtitle">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Quia ullam doloremque, quae sequi voluptate nostrum
+                      numquam voluptates? Suscipit quam possimus quibusdam a,
+                      nulla atque aliquid corrupti dolorem, odit quisquam
+                      consectetur minus ratione dignissimos error, tempore est?
+                      Quidem ex sequi perferendis enim itaque et maiores
+                      possimus velit aspernatur! Ducimus porro quisquam
+                      laudantium optio. Exercitationem accusamus laborum saepe
+                      doloribus quam corrupti itaque.
+                    </p>
+                  </div>
+                  <div class="article__info-block">
+                    <h3 class="article__info-title">2.Что-то о сахаре</h3>
+                    <img
+                      class="article__info-block_img"
+                      src="/assets/imgs/blocks/articles/articles-example-about-sugar-bg.png"
+                      alt=""
+                    />
+                    <p class="article__info-subtitle">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Quia ullam doloremque, quae sequi voluptate nostrum
+                      numquam voluptates? Suscipit quam possimus quibusdam a,
+                      nulla atque aliquid corrupti dolorem, odit quisquam
+                      consectetur minus ratione dignissimos error, tempore est?
+                      Quidem ex sequi perferendis enim itaque et maiores
+                      possimus velit aspernatur! Ducimus porro quisquam
+                      laudantium optio. Exercitationem accusamus laborum saepe
+                      doloribus quam corrupti itaque.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <div class="simular__posts">
+                <h2 class="simular__title">вам может понравиться</h2>
+                <div class="simular__articles">
+                  <article class="simular__article-small article__small">
+                    <a href="./articles/">
+                      <img
+                        class="article__hero-img article__img"
+                        src="/assets/imgs/blocks/articles/image-beforeload.png"
+                        alt=""
+                      />
+                      <div class="article__hero-small_info article__small-info">
+                        <h3 class="article__small-title">
+                          Lorem ipsum dolor sit amet?
+                        </h3>
+                        <div class="article__small-heart">
+                          <svg
+                            width="46"
+                            height="40"
+                            viewBox="0 0 46 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M40.6203 5.33443C39.6022 4.33011 38.3934 3.5334 37.0629 2.98984C35.7324 2.44628 34.3064 2.1665 32.8663 2.1665C31.4261 2.1665 30.0001 2.44628 28.6696 2.98984C27.3391 3.5334 26.1303 4.33011 25.1122 5.33443L22.9993 7.41778L20.8864 5.33443C18.8299 3.30671 16.0407 2.16755 13.1324 2.16755C10.224 2.16755 7.43482 3.30671 5.37833 5.33443C3.32183 7.36215 2.1665 10.1123 2.1665 12.9799C2.1665 15.8476 3.32183 18.5977 5.37833 20.6255L7.49125 22.7088L22.9993 37.9998L38.5074 22.7088L40.6203 20.6255C41.6389 19.6216 42.4469 18.4297 42.9981 17.1179C43.5494 15.806 43.8332 14.3999 43.8332 12.9799C43.8332 11.5599 43.5494 10.1539 42.9981 8.84202C42.4469 7.53018 41.6389 6.33828 40.6203 5.33443Z"
+                              stroke="#B9B9B9"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <article class="simular__article-small article__small">
+                    <a href="./articles/recepts/example.html">
+                      <img
+                        class="article__hero-img article__img"
+                        src="/assets/imgs/blocks/articles/articles-example-left-bg.png"
+                        alt=""
+                      />
+                      <div class="article__hero-small_info article__small-info">
+                        <h3 class="article__small-title">
+                          Почему вредно есть сахар?
+                        </h3>
+                        <div class="article__small-heart">
+                          <svg
+                            width="46"
+                            height="40"
+                            viewBox="0 0 46 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M40.6203 5.33443C39.6022 4.33011 38.3934 3.5334 37.0629 2.98984C35.7324 2.44628 34.3064 2.1665 32.8663 2.1665C31.4261 2.1665 30.0001 2.44628 28.6696 2.98984C27.3391 3.5334 26.1303 4.33011 25.1122 5.33443L22.9993 7.41778L20.8864 5.33443C18.8299 3.30671 16.0407 2.16755 13.1324 2.16755C10.224 2.16755 7.43482 3.30671 5.37833 5.33443C3.32183 7.36215 2.1665 10.1123 2.1665 12.9799C2.1665 15.8476 3.32183 18.5977 5.37833 20.6255L7.49125 22.7088L22.9993 37.9998L38.5074 22.7088L40.6203 20.6255C41.6389 19.6216 42.4469 18.4297 42.9981 17.1179C43.5494 15.806 43.8332 14.3999 43.8332 12.9799C43.8332 11.5599 43.5494 10.1539 42.9981 8.84202C42.4469 7.53018 41.6389 6.33828 40.6203 5.33443Z"
+                              stroke="#B9B9B9"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer article__full-footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__left">
+            <div class="footer__item footer__socials">
+              <p>Соц.сети</p>
+              <a href="https://vk.com">
+                <img src="/assets/imgs/social/vk.svg" alt="vk" />
+              </a>
+              <a href="https://inst.com">
+                <img src="/assets/imgs/social/inst.svg" alt="inst" />
+              </a>
+            </div>
+            <div class="footer__item footer__support">
+              <p>Вопросы/поддержка</p>
+              <a href="htttps://web.telegram.com"
+                ><img src="/assets/imgs/social/tl.svg" alt="telegram"
+              /></a>
+            </div>
+            <div class="footer__item footer__copyright">
+              <span class="curr-year"></span><span>@GreenBite</span>
+              <a href="./">Правовая информация</a>
+            </div>
+          </div>
+          <div class="footer__right">
+            <a href="https://ll-agency.ru/">
+              <img
+                class="footer__img made-by"
+                src="/assets/imgs/icons/logos/made-by.svg"
+                alt="L&L agency"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>

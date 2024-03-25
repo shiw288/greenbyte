@@ -1,0 +1,52 @@
+@import "../basic/reset";
+
+@import "../basic/vars";
+@import "../basic/mixins";
+
+@import "../basic/templates";
+
+@import "../animations/animations";
+
+@import "../components/header";
+
+@import "../components/hero";
+
+@import "../components/articles";
+
+@import "../components/footer";
+
+@import "../components/recepts";
+
+.recipes__items .article__small a img {
+    min-height: unset;
+    min-width: unset;
+    @media (max-width: 900px) {
+        max-height: unset;
+        height: min-content;
+        width: 100%;
+    }
+}
+.recipes__items .article__small {
+    @media (max-width: 900px) {
+        border-radius: 20px !important;
+    }
+    @media (max-width: 600px) {
+        border-radius: 20px !important;
+        display: block !important;
+    }
+}
+
+.recipes__content,
+.header__recipes,
+.hero__content-recipes,
+.footer__content-recipes {
+    @media (min-width: 1800px) {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 2200px) {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,117 @@
+@import "vars";
+@import "mixins";
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:active,
+:focus,
+a:active,
+a:focus {
+    outline: 0;
+}
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+article,
+textarea,
+blockquote {
+    word-break: break-all;
+}
+aside,
+footer,
+header,
+nav {
+    display: block;
+}
+article,
+textarea,
+blockquote {
+    word-break: break-all;
+}
+body,
+html {
+    height: 100%;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: $comfortaa-font;
+    font-weight: 400;
+}
+button,
+input,
+textarea {
+    font-family: inherit;
+    background: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a {
+    color: inherit;
+}
+li,
+ul {
+    list-style: none;
+    word-break: break-all;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 auto;
+}
+@include for-small-phone() {
+    .container {
+        max-width: calc(100% - (40px));
+    }
+}
+@include for-desktop-up() {
+    .container {
+        max-width: calc(100% - (2546px - 2240px));
+    }
+}
+@include for-tablets() {
+    .container {
+        max-width: 90%;
+    }
+}
+
+main {
+    position: relative;
+}
+section {
+    width: 100%;
+}

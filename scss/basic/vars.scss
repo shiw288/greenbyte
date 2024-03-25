@@ -1,0 +1,28 @@
+@import "mixins";
+
+$gray: #ddd;
+$gray-text: #b9b9b9;
+$black: #000;
+$white: #fff;
+$red: #e44e4e;
+$pink: #ffc1c1;
+$green: #4dc752;
+$darkgreen: #387a7a;
+$green-elements: #5a8c42;
+$orange: #e16a0a;
+
+$ui-index-1: 1; // для наползающих элементов в общем потоке
+$ui-index-2: 2; // для наползающих элементов в общем потоке
+$ui-index-3: 3; // для масок
+$ui-index-4: 4; // для сайдбаров
+$ui-index-5: 5; // для модалок
+$ui-index-6: 6; // для элементов, перекрывающих все
+
+$comfortaa-font: "Comfortaa", sans-serif;
+$futura-font: "Futura PT", sans-serif;
+$averta-font: "Averta CY", sans-serif;
+$averta-cyrillic-font: "Averta Cyrillic", sans-serif;
+$evolventa-font: "Evolventa", sans-serif;
+$briberra-font: "Briberra", sans-serif;
+$antipasto-font: "Antipasto Pro", sans-serif;
+$bebas-font: "Bebas Neue", sans-serif;
