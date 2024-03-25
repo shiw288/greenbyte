@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Briberra';
+    src: url('Briberra.eot');
+    src: local('Briberra'),
+        url('Briberra.eot?#iefix') format('embedded-opentype'),
+        url('Briberra.woff2') format('woff2'),
+        url('Briberra.woff') format('woff'),
+        url('Briberra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
