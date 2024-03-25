@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillicExtra-Thin.otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-Thin.otf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-SemiBold.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillicExtra-Bold.otf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-Black.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* italic */
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillicExtra-ThinItalic.otf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-ThinItalic.otf');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-LightItalic.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-RegularItalic.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-SemiBoldItalic.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-BoldItalic.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillicExtra-BoldItalic.otf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Averta Cyrillic';
+    src: url('AvertaCyrillic-BlackItalic.otf');
+    font-weight: 900;
+    font-style: italic;
+}
